@@ -6,8 +6,10 @@ var rl = readline.createInterface({
   output: process.stdout
 });
 
+
+
 // Create simple echo bot
-login({email: "0392571400", password: "traduc"}, function callback (err, api) {
+login({email: "nduc535@gmail.com", password: "tddt.hust.vatm"}, function callback (err, api) {
     if(err) {
         switch (err.error) {
             case 'login-approval':
@@ -24,6 +26,6 @@ login({email: "0392571400", password: "traduc"}, function callback (err, api) {
     }
 
     api.listen(function callback(err, message) {
-        api.sendMessage("Chào chế, mình đang bận, nói chuyện sau đê!", message.threadID);
+        api.sendMessage("Hi, mình tên là Voccer_Bot, mình là bot chat của Trong Duc, hiên tại Trong Duc không thể trả lời được tin nhắn, nói chuyện sau nhé!", message.threadID);
     });
 });
